@@ -2,6 +2,8 @@ package classes;
 
 import java.awt.GridLayout;
 import javax.swing.JPanel;
+
+import java.awt.Color;
 import java.awt.Component;
 
 public class List extends JPanel{
@@ -11,7 +13,8 @@ public class List extends JPanel{
         GridLayout layout = new GridLayout(10,1);
         layout.setVgap(5);
 
-        this.setLayout(layout);   
+        this.setLayout(layout);
+        this.setBackground(new Color(255, 204, 0));
     }
 
     public void updateNumbers()

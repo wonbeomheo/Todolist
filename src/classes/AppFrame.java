@@ -19,7 +19,7 @@ public class AppFrame extends JFrame{
     //Constructor
     AppFrame()
     {
-        this.setSize(400,700);
+        this.setSize(500,700);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setVisible(true);
 
@@ -33,6 +33,7 @@ public class AppFrame extends JFrame{
         addTask = btnPanel.getAddTask();
         clear = btnPanel.getClear();
 
+        revalidate();
         addListeners();
     }
 

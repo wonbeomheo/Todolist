@@ -1,5 +1,6 @@
 package classes;
 
+import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
 
@@ -19,6 +20,7 @@ public class ButtonPanel extends JPanel{
     ButtonPanel()
     {
         this.setPreferredSize(new Dimension(400, 60));
+        this.setBackground(new Color(255, 204, 0));
         
         addTask = new JButton("Add Task");
         addTask.setBorder(emptyBorder);
